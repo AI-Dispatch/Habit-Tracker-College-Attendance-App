@@ -36,8 +36,8 @@ The **Habit Tracker & College Attendance App** is a feature-rich web application
 ## 📦 Installation & Setup
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-repo/habit-tracker.git
-   cd habit-tracker
+   git clone https://github.com/AI-Dispatch/Habit-Tracker-College-Attendance-App.git
+   cd Habit-Tracker-College-Attendance-App
    ```
 2. **Install Dependencies**
    ```sh
