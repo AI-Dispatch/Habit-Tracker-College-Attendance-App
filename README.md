@@ -3,6 +3,9 @@
 ## 🚀 Overview
 The **Habit Tracker & College Attendance App** is a feature-rich web application designed to help users visualize their daily habits and routines. Additionally, it includes a **College Attendance Tracker**, allowing students to monitor their class attendance efficiently. The app integrates with **Google Calendar** and **Notion Calendar** for seamless synchronization and enhanced productivity.
 
+<img width="928" alt="Screenshot 2025-03-26 at 11 29 53 PM" src="https://github.com/user-attachments/assets/9c44c9d2-65d4-4f8a-ad86-44378c0848d6" />
+
+
 ## ✨ Features
 ### 🎯 Habit Tracking
 - Create, update, and delete habits
@@ -11,16 +14,25 @@ The **Habit Tracker & College Attendance App** is a feature-rich web application
 - Customizable reminders & notifications
 - Data export functionality for analysis
 
+<img width="923" alt="Screenshot 2025-03-26 at 11 30 00 PM" src="https://github.com/user-attachments/assets/bce14a56-d87c-421f-a50e-094f95c51469" />
+
+
 ### 📅 Calendar Integrations
 - **Google Calendar**: Sync habits with Google Calendar for scheduling
 - **Notion Calendar**: Log habit progress in a Notion database
 - Integrated API endpoints for seamless connectivity
+
+<img width="921" alt="Screenshot 2025-03-26 at 11 30 07 PM" src="https://github.com/user-attachments/assets/521ef7c9-61e0-4e29-a2e6-34844cf2b48f" />
+
 
 ### 🏫 College Attendance Tracker
 - Log attended and skipped classes
 - View attendance statistics
 - Monitor trends over time
 - Generate reports on class participation
+
+<img width="920" alt="Screenshot 2025-03-26 at 11 30 22 PM" src="https://github.com/user-attachments/assets/9f6490f5-8d12-4188-ac2e-6a04f644209b" />
+
 
 ### 🖥️ User Interface
 - Intuitive dashboard for habit visualization
