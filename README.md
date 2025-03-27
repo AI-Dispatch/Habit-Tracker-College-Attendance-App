@@ -1,92 +1,133 @@
-# Habit Tracker & College Attendance App
+# AI Dispatch - README
 
-## 🚀 Overview
-The **Habit Tracker & College Attendance App** is a feature-rich web application designed to help users visualize their daily habits and routines. Additionally, it includes a **College Attendance Tracker**, allowing students to monitor their class attendance efficiently. The app integrates with **Google Calendar** and **Notion Calendar** for seamless synchronization and enhanced productivity.
+## Overview
+AI Dispatch is an AI-powered newsletter platform designed to deliver the latest insights in artificial intelligence, technology, and innovation. The platform includes an advanced admin dashboard, subscriber management, blog publishing, and user authentication features.
 
-<img width="928" alt="Screenshot 2025-03-26 at 11 29 53 PM" src="https://github.com/user-attachments/assets/9c44c9d2-65d4-4f8a-ad86-44378c0848d6" />
-
-
-## ✨ Features
-### 🎯 Habit Tracking
-- Create, update, and delete habits
-- Categorization & tagging of habits
-- Data visualization with charts & graphs
-- Customizable reminders & notifications
-- Data export functionality for analysis
-
-<img width="923" alt="Screenshot 2025-03-26 at 11 30 00 PM" src="https://github.com/user-attachments/assets/bce14a56-d87c-421f-a50e-094f95c51469" />
+<img width="618" alt="Screenshot 2025-03-27 at 12 41 00 PM" src="https://github.com/user-attachments/assets/89a86248-9a09-4c30-adf4-2a6692c04099" />
 
 
-### 📅 Calendar Integrations
-- **Google Calendar**: Sync habits with Google Calendar for scheduling
-- **Notion Calendar**: Log habit progress in a Notion database
-- Integrated API endpoints for seamless connectivity
+## Features
 
-<img width="921" alt="Screenshot 2025-03-26 at 11 30 07 PM" src="https://github.com/user-attachments/assets/521ef7c9-61e0-4e29-a2e6-34844cf2b48f" />
-
-
-### 🏫 College Attendance Tracker
-- Log attended and skipped classes
-- View attendance statistics
-- Monitor trends over time
-- Generate reports on class participation
-
-<img width="920" alt="Screenshot 2025-03-26 at 11 30 22 PM" src="https://github.com/user-attachments/assets/9f6490f5-8d12-4188-ac2e-6a04f644209b" />
+### 1. User Authentication & Account Management
+- User registration with secure password hashing
+- User login with JWT token authentication
+- User profile management
+- Protected routes requiring authentication
+- Test token generation for development
 
 
-### 🖥️ User Interface
-- Intuitive dashboard for habit visualization
-- Calendar view for tracking routines
-- Attendance log with real-time updates
 
-## 🛠️ Tech Stack
-- **Frontend**: React, TypeScript
-- **Backend**: Node.js, Express
-- **Database**: In-memory storage (for now, can be extended to a database)
-- **API Integrations**: Google Calendar API, Notion API
+### 2. Habit Tracking System
+- Create, view, update, and delete habits
+- Custom habit categories with color coding
+- Habit tagging for better organization
+- Daily, weekly, and monthly habit frequency options
+- Habit completion tracking with statistics
+- Habit streak monitoring
+- Habit record management with notes
 
-## 📦 Installation & Setup
-1. **Clone the Repository**
+<img width="923" alt="Screenshot 2025-03-26 at 11 30 00 PM" src="https://github.com/user-attachments/assets/8fbb28e9-73cb-45cf-b4cd-e3065b23ced9" />
+
+
+### 3. College Class Management
+- Add and manage college classes
+- Schedule classes with recurring day/time settings
+- Track class attendance (attended/skipped)
+- View attendance statistics and reports
+- Associate classes with habits or meetings
+
+<img width="920" alt="Screenshot 2025-03-26 at 11 30 22 PM" src="https://github.com/user-attachments/assets/2bbea7f3-5425-4aa2-b09a-bae413449f11" />
+
+
+### 4. Meeting Integration
+- Schedule virtual meetings (Zoom, Google Meet, etc.)
+- Meeting templates for quick scheduling
+- Create meetings from templates
+- Meeting participant management
+- Meeting categorization by type and platform
+- Meeting status tracking (scheduled, completed, canceled)
+- Associate meetings with habits or college classes
+
+
+
+### 5. Calendar Integration
+- Google Calendar synchronization for habits and meetings
+- Notion Calendar integration
+- Two-way calendar sync capabilities
+- Google OAuth authentication flow
+
+<img width="921" alt="Screenshot 2025-03-26 at 11 30 07 PM" src="https://github.com/user-attachments/assets/74d2e64f-d126-4082-819f-a5f486239e6e" />
+
+
+### 6. Notification System
+- WhatsApp notifications via Twilio integration
+- Email notifications
+- Configurable notification preferences
+- Notification settings by feature (habits, classes, meetings)
+- Configurable reminder times
+
+### 7. Visualization & Statistics
+- Habit completion tracking visualizations
+- Class attendance statistics
+- Meeting trends and analytics
+- Data visualization components for performance tracking
+- Calendar view of all scheduled activities
+
+### 8. User Interface
+- Modern, responsive design
+- Dark/light theme options
+- Mobile-friendly layout
+- Easy navigation between features
+- Interactive dashboard with summary statistics
+- Beautiful UI components using shadcn/ui
+
+### 9. Security Features
+- JWT-based authentication
+- Password hashing with bcrypt
+- Protected API endpoints
+- Secure credential management for third-party services
+- Optional authentication middleware
+
+### 10. Data Management
+- In-memory storage with persistence
+- Data validation using Zod schemas
+- Type-safe data operations
+- Efficient data querying with filtering options
+
+## Installation
+### Prerequisites
+- Node.js (latest LTS version)
+- PostgreSQL or any preferred database
+- Redis (for caching and queue management)
+
+### Setup
+1. Clone the repository:
    ```sh
-   git clone https://github.com/AI-Dispatch/Habit-Tracker-College-Attendance-App.git
-   cd Habit-Tracker-College-Attendance-App
+   git clone https://github.com/your-repo/ai-dispatch.git
+   cd ai-dispatch
    ```
-2. **Install Dependencies**
+2. Install dependencies:
    ```sh
    npm install
    ```
-3. **Set Up API Credentials**
-   - Google Calendar API
-   - Notion API
-   - Add credentials in a `.env` file
-4. **Run the Application**
+3. Set up the environment variables:
+   - Copy `.env.example` to `.env`
+   - Configure database credentials, API keys, and other environment settings
+4. Run database migrations:
+   ```sh
+   npx prisma migrate dev
+   ```
+5. Start the development server:
    ```sh
    npm run dev
    ```
 
-## 🔑 API Configuration
-### 🌍 Google Calendar API
-To enable Google Calendar integration, provide the following environment variables:
-```env
-GOOGLE_CLIENT_ID=your_client_id
-GOOGLE_CLIENT_SECRET=your_client_secret
-GOOGLE_REDIRECT_URI=http://localhost:5000/api/auth/google/callback
-GOOGLE_REFRESH_TOKEN=your_refresh_token
-```
-
-### 📝 Notion API
-To enable Notion integration, provide the following environment variables:
-```env
-NOTION_API_KEY=your_notion_api_key
-NOTION_DATABASE_ID=your_database_id
-NOTION_PARENT_PAGE_ID=your_parent_page_id
-```
-
-## 📈 Future Enhancements
-- AI-driven habit recommendations
-- Multi-user support with account authentication
-- Mobile app version with push notifications
-- Advanced statistics with AI insights
+## Deployment
+- Deploy using Docker:
+  ```sh
+  docker-compose up -d
+  ```
+- CI/CD pipeline integration for automatic deployments
 
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
