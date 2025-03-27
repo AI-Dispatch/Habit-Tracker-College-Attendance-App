@@ -1,54 +1,114 @@
-# Contributing to Futurist Projects
+# Contributing to the Habit Tracker App
 
-Thank you for considering contributing to Futurist's projects! Your contributions help drive innovation and push the boundaries of AI, technology, and futuristic advancements.
+Thank you for your interest in contributing to the **Habit Tracker App**! This project aims to provide a seamless habit tracking experience with visualization features, Google Calendar and Notion integration, attendance tracking, and optional WhatsApp notifications.
 
-## How to Contribute
+## Project Features
+- **Visual Habit Tracking**: Track habits and routines with customizable visualizations.
+- **Google Calendar & Notion Integration**: Sync habits and routines for better organization.
+- **College Attendance Tracking**: Monitor attended and skipped classes.
+- **WhatsApp Notifications (Optional)**: Receive reminders and updates via WhatsApp.
 
-### Issues
-- Before opening a new issue, please check existing issues to avoid duplicates.
-- Clearly describe the issue with necessary details, including steps to reproduce (if applicable).
-- Label the issue appropriately (e.g., bug, feature request, documentation, etc.).
-
-### Pull Requests
-- Ensure your code follows the project's coding standards and style guide.
-- Create a separate branch for your contribution.
-- Provide a clear, concise title and description for your pull request.
-- Link the PR to the related issue (if applicable).
-- Write meaningful commit messages.
-- Ensure your code is well-tested before submission.
-- Pull requests will be reviewed before merging. Address any requested changes promptly.
-
-## Code of Conduct
-We follow a **strict code of conduct** to ensure a positive and inclusive environment. Please be respectful to maintain a welcoming community.
-
-## Contributor Guidelines
-- Follow best coding practices and maintain clean, modular, and well-documented code.
-- Contributions should align with the goals of the project.
-- Be open to feedback and willing to collaborate.
-- For significant contributions, discuss your ideas with maintainers before implementation.
-
-## Repository Structure
-- **Main Branch**: Stable and production-ready.
-- **Development Branch**: Ongoing work and new feature integration.
-- **Feature Branches**: Used for specific new features before merging into development.
+---
 
 ## Getting Started
-1. Fork the repository.
-2. Clone your fork to your local machine.
-3. Create a new branch for your changes.
-4. Make your changes and commit them.
-5. Push your changes to your forked repository.
-6. Submit a pull request to the main repository.
 
-## Reporting Bugs & Feature Requests
-- Clearly describe the problem or feature.
-- Provide screenshots or logs if applicable.
-- Suggest possible solutions (if applicable).
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** & **npm**
+- **Google Cloud Console account** (for Google Calendar integration)
+- **Notion API credentials** (for Notion integration)
+- **Twilio account** (for WhatsApp notifications)
 
-## Communication
-For any discussions, questions, or collaboration opportunities:
-- Connect on LinkedIn: [V Chaitanya Chowdari](https://www.linkedin.com/in/v-chaitanya-chowdari-bb3733202)
-- Follow on Twitter: [@vchaitanyachai](https://x.com/vchaitanyachai?s=11)
+### Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/vchaitanyachowd/habit-tracker-app.git
+   cd habit-tracker-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-Thank you for contributing and being a part of the innovation journey! 🚀
+---
+
+## Contribution Guidelines
+
+### 1. Reporting Issues
+If you find bugs, report them in the **Issues** section with:
+- Steps to reproduce
+- Expected vs. actual behavior
+- Screenshots/logs (if applicable)
+
+### 2. Feature Requests
+Before suggesting a new feature, check if it already exists. If not, create an issue with:
+- Feature description
+- Use cases & benefits
+
+### 3. Submitting Pull Requests
+1. **Fork the repository** and create a feature branch:
+   ```sh
+   git checkout -b feature-name
+   ```
+2. **Commit changes**:
+   ```sh
+   git commit -m "Added feature: XYZ"
+   ```
+3. **Push the branch**:
+   ```sh
+   git push origin feature-name
+   ```
+4. **Create a Pull Request** and describe your changes.
+
+---
+
+## API Credentials
+### Google Calendar
+To enable Google Calendar sync, add the following to `.env`:
+```
+GOOGLE_CLIENT_ID=your-client-id
+GOOGLE_CLIENT_SECRET=your-client-secret
+GOOGLE_REDIRECT_URI=http://localhost:5000/api/auth/google/callback
+```
+
+### Notion Integration
+```
+NOTION_API_KEY=your-api-key
+NOTION_DATABASE_ID=your-database-id
+```
+
+### Twilio (For WhatsApp Notifications - Optional)
+```
+TWILIO_ACCOUNT_SID=your-account-sid
+TWILIO_AUTH_TOKEN=your-auth-token
+TWILIO_PHONE_NUMBER=your-whatsapp-number
+```
+
+---
+
+## Feature Contributions
+
+### Habit Tracking
+- Improve visualization options
+- Add habit categorization & tagging
+
+### College Attendance Tracking
+- Add more statistics (weekly/monthly trends)
+- Introduce reminders for upcoming classes
+
+### WhatsApp Notifications
+- Customize message templates
+- Enable reminders for multiple users
+
+---
+
+## Questions?
+If you have any questions, feel free to open an issue or reach out to the project maintainer.
+
+Happy coding! 🚀
+
 
