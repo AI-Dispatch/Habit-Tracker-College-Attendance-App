@@ -47,7 +47,6 @@ We follow a **strict code of conduct** to ensure a positive and inclusive enviro
 
 ## Communication
 For any discussions, questions, or collaboration opportunities:
-- Join our Discord community: [@vchaitanyachowdari](https://discord.com/channels/@vchaitanyachowdari)
 - Connect on LinkedIn: [V Chaitanya Chowdari](https://www.linkedin.com/in/v-chaitanya-chowdari-bb3733202)
 - Follow on Twitter: [@vchaitanyachai](https://x.com/vchaitanyachai?s=11)
 
